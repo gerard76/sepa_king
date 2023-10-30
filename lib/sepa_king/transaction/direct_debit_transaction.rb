@@ -50,6 +50,8 @@ module SEPA
         self.currency == 'EUR'
       when PAIN_008_001_02
         true
+      when PAIN_008_001_08
+        true
       end
     end
   end
