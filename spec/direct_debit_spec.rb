@@ -193,6 +193,10 @@ RSpec.describe SEPA::DirectDebit do
         it 'should validate against pain.008.003.02' do
           expect(subject.to_xml(SEPA::PAIN_008_003_02)).to validate_against('pain.008.003.02.xsd')
         end
+
+        it 'should validate against pain.008.001.08' do
+          expect(subject.to_xml(SEPA::PAIN_008_001_08)).to validate_against('pain.008.001.08.xsd')
+        end
       end
 
       context 'with BIC and debtor address ' do
